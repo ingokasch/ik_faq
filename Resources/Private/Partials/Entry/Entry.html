@@ -1,0 +1,44 @@
+<f:if condition="{entry} != {selectEntry}">
+	<f:then>
+		<section class="tx_ikfaq_entry" id="ikfaq_entry__{iteration.index}" onclick="toggle(this);">
+	</f:then>
+	<f:else>
+		<section class="tx_ikfaq_entry is-open" id="ikfaq_entry__{iteration.index}" onclick="toggle(this);">
+	</f:else>
+</f:if>
+	<div class="tx_ikfaq_question" data-index="{iteration.index}">
+		<p>{entry.question}</p>
+			<f:if condition="{entry.questionImages}">
+				<section class="entry-question-images">
+					<f:for each="{entry.questionImages}" as="questionImage">
+						<figure>
+							<f:image src="{questionImage.originalResource.publicUrl}" alt="{questionImage.originalResource.title}" width="150m" height="150m"/>
+							<figcaption>{questionImage.originalResource.description}</figcaption>
+						</figure>
+					</f:for>
+				</section>
+			</f:if>
+	</div>
+	<div class="tx_ikfaq_answere" data-index="{iteration.index}">
+			<p>{entry.answere}</p>
+			<f:if condition="{entry.answereImages}">
+				<section class="entry-answere-images">
+					<f:for each="{entry.answereImages}" as="answereImage">
+						<figure>
+							<f:image src="{answereImage.originalResource.publicUrl}" alt="{answereImage.originalResource.title}" width="150m" height="150m"/>
+							<figcaption>{answereImage.originalResource.description}</figcaption>
+						</figure>
+					</f:for>
+				</section>
+			</f:if>
+			
+			<f:if condition="{entry.links}">
+				<section class="tx_ikfaq_answere_links">
+					<f:for each="{entry.links}" as="link">
+						<a href="{link.href}" target="{link.target}">{link.name}</a>
+					</f:for>
+				</section>
+			</f:if>
+	</div>
+
+</section>

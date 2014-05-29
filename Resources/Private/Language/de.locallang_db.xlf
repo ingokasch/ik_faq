@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de_DE" datatype="plaintext" original="messages" date="2014-05-25T11:41:01Z" product-name="ik_faq">
+		<header/>
+		<body>
+			<trans-unit id="tx_ikfaq_domain_model_category">
+				<source>Category</source>
+				<target state="translated">Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.title">
+				<source>Title</source>
+				<target state="translated">Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.images">
+				<source>Images</source>
+				<target state="translated">Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.entries">
+				<source>Entries</source>
+				<target state="translated">Einträge</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.tab.entries">
+				<source>Entries</source>
+				<target state="translated">Einträge</target>
+			</trans-unit>
+
+			<trans-unit id="tx_ikfaq_domain_model_entry">
+				<source>Entry</source>
+				<target state="translated">Eintrag</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.title">
+				<source>Title (will be show in the entry list for the category selection)</source>
+				<target state="translated">Titel (wird bei der Auswahl eines Eintrags angezeigt)</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.question">
+				<source>Question</source>
+				<target state="translated">Frage</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.question_images">
+				<source>Images</source>
+				<target state="translated">Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.answere">
+				<source>Answere</source>
+				<target state="translated">Antwort</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.answere_images">
+				<source>Images</source>
+				<target state="translated">Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.categories">
+				<source>Categories</source>
+				<target state="translated">Kategorien</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.links">
+				<source>Links</source>
+				<target state="translated">Verknüpfungen</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.question">
+				<source>Question</source>
+				<target state="translated">Frage</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.answere">
+				<source>Answere</source>
+				<target state="translated">Antwort</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.categories">
+				<source>Categories</source>
+				<target state="translated">Kategorien</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.links">
+				<source>Links</source>
+				<target state="translated">Verknüpfungen</target>
+			</trans-unit>
+
+			<trans-unit id="tx_ikfaq_domain_model_link">
+				<source>Link</source>
+				<target state="translated">Verknüpfung</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.name">
+				<source>Name</source>
+				<target state="translated">Name</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.href">
+				<source>Href</source>
+				<target state="translated">Href</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.target">
+				<source>Target</source>
+				<target state="translated">Target</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.entries">
+				<source>Entries</source>
+				<target state="translated">Einträge</target>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.tab.entries">
+				<source>Entries</source>
+				<target state="translated">Einträge</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
