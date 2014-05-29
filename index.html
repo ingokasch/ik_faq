@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="ik_faq : ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ik_faq</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ingokasch/ik_faq">View on GitHub</a>
+
+          <h1 id="project_title">ik_faq</h1>
+          <h2 id="project_tagline">ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ingokasch/ik_faq/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ingokasch/ik_faq/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="typo3-faq-extension-ik_faq" class="anchor" href="#typo3-faq-extension-ik_faq"><span class="octicon octicon-link"></span></a>TYPO3-FAQ-Extension (ik_faq)</h1>
+
+<hr><h3>
+<a name="what-is-it" class="anchor" href="#what-is-it"><span class="octicon octicon-link"></span></a>What is it?</h3>
+
+<p>ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website.</p>
+
+<p><strong><em>This extension is developed under GNU V3 for TYPO3 6.2.x</em></strong> <em>and might not be compatible with older versions.</em></p>
+
+<h3>
+<a name="what-am-i-able-to-do-with-it" class="anchor" href="#what-am-i-able-to-do-with-it"><span class="octicon octicon-link"></span></a>What am I able to do with it?</h3>
+
+<p>You can set up multiple categories (incl. category image(s)) and associate question/answere pairs to it (multiple categories for each question/answere pair are supported).</p>
+
+<p>Each question and answere can have multiple images and links.</p>
+
+<p>The included templates, CSS and JavaScript files provide a minimalistically styled frontend output. The output in the frontend can easily be modified and tailored to your needs.</p>
+
+<h3>
+<a name="behind-the-curtain-technical-stuff-you-dont-need-to-understand-this-to-use-the-extension" class="anchor" href="#behind-the-curtain-technical-stuff-you-dont-need-to-understand-this-to-use-the-extension"><span class="octicon octicon-link"></span></a>Behind the curtain (<em>technical stuff, you don't need to understand this to use the extension</em>)</h3>
+
+<p>The extension is based on Extbase (namespaces etc.) and uses Fluid for templating. File relations are done using the <a href="http://docs.typo3.org/TYPO3/FileAbstractionLayerReference/">TYPO3 FAL</a>. All CSS files are generated via the CSS Preprocessor <a href="http://sass-lang.com/">SASS</a>. The original SASS files are also included.</p>
+
+<p>All CSS and JavaScript files are also minified for faster rendering. All minifications etc. are done using the streaming build system <a href="http://gulpjs.com">gulp.js</a>.
+The used gulpfile.js and composer.json (<a href="https://getcomposer.org/">composer</a>) are also included in the download.</p>
+
+<p><strong><em>Sidenote: I recommand you include all CSS and JavaScript code in your existing files to have it all in one place.</em></strong></p>
+
+<hr><h1>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h1>
+
+<h3>
+<a name="1-download" class="anchor" href="#1-download"><span class="octicon octicon-link"></span></a>1. Download</h3>
+
+<p>Download the extension. Extract and copy the folder "ik_faq" in your <strong>typo3conf</strong> folder.</p>
+
+<p><strong>OR</strong></p>
+
+<p>Clone this repository into your <strong>typo3conf</strong> folder:</p>
+
+<pre><code>$ git clone git://github.com/ingokasch/ik_faq.git
+</code></pre>
+
+<h3>
+<a name="2-activate-the-extension" class="anchor" href="#2-activate-the-extension"><span class="octicon octicon-link"></span></a>2. Activate the extension</h3>
+
+<p>Login to your TYPO3 backend, go to the extension manager and active the extension named 
+<strong>FAQ - Frequently Asked Questions // Ingo Kasch</strong></p>
+
+<h3>
+<a name="3-include-static-files" class="anchor" href="#3-include-static-files"><span class="octicon octicon-link"></span></a>3. Include static files</h3>
+
+<p>Use the template tool and select the page containing your page or ext+ template from the page tree. Make sure you have <strong>Info/Modify</strong> selected in the dropdown at the top and click on <strong>Edit the whole template record</strong>.</p>
+
+<p>Select the tab <strong>includes</strong> and add the extension files <strong>FAQ (ik_faq)</strong> to the selected items list.</p>
+
+<p>Save the changes ;-)</p>
+
+<h3>
+<a name="4-configuration" class="anchor" href="#4-configuration"><span class="octicon octicon-link"></span></a>4. Configuration</h3>
+
+<p>Create a new sysfolder ("FAQ" for example). This folder will contain all data related to the FAQs (categories, questions/answers, links etc.).</p>
+
+<p>Use the <strong>Constant Editor</strong> to edit the <strong>PLUGIN.TX_FAQ</strong> constants.
+Set the value of <strong>Default storage PID</strong> in the section "Others" to the id of the sysfolder that you have created right before.</p>
+
+<p>That is it. Now the extension knows where to find the needed data.</p>
+
+<hr><h1>
+<a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to use it</h1>
+
+<h3>
+<a name="1-category" class="anchor" href="#1-category"><span class="octicon octicon-link"></span></a>1. Category</h3>
+
+<p>Use the <strong>List tool</strong> on the FAQ sysfolder and create a new record of typo <strong>Category</strong> (in the section <em>FAQ - Frequently Asked Questions // Ingo Kasch</em>)</p>
+
+<p>Your category needs a title and can have one, multiple or no images related to it.
+If you have created any answere/question entries, you are able to relate them to the category using the <strong>Entries</strong> tab.</p>
+
+<p>The following fields are available:</p>
+
+<table>
+<thead><tr>
+<th>Fieldname</th>
+<th>Tab</th>
+<th>Function</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>General</td>
+<td>Title of the category</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>General</td>
+<td>Images related to the category</td>
+</tr>
+</tbody>
+</table><h3>
+<a name="2-entry-answersquestions" class="anchor" href="#2-entry-answersquestions"><span class="octicon octicon-link"></span></a>2. Entry (answers/questions)</h3>
+
+<p>Use the <strong>List tool</strong> on the FAQ sysfolder and create a new record of typo <strong>Entry</strong> (in the section <em>FAQ - Frequently Asked Questions // Ingo Kasch</em>)</p>
+
+<p>The following fields are available:</p>
+
+<table>
+<thead><tr>
+<th>Fieldname</th>
+<th>Tab</th>
+<th>Function</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>General</td>
+<td>Used as identifier in the select box in a category</td>
+</tr>
+<tr>
+<td>Question</td>
+<td>Question</td>
+<td>Text of your question (RTE)</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>Question</td>
+<td>Images related to the question</td>
+</tr>
+<tr>
+<td>Answere</td>
+<td>Answere</td>
+<td>Text of your answere (RTE)</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>Answere</td>
+<td>Images related to the answere</td>
+</tr>
+<tr>
+<td>Links</td>
+<td>Links</td>
+<td>Links related to the answere (TYPE: Link)</td>
+</tr>
+<tr>
+<td>Categories</td>
+<td>Categories</td>
+<td>Categories in which the entry is listed</td>
+</tr>
+</tbody>
+</table><h3>
+<a name="3-links" class="anchor" href="#3-links"><span class="octicon octicon-link"></span></a>3. Links</h3>
+
+<p>Use the <strong>List tool</strong> on the FAQ sysfolder and create a new record of typo <strong>Link</strong> (in the section <em>FAQ - Frequently Asked Questions // Ingo Kasch</em>)</p>
+
+<p>The following fields are available:</p>
+
+<table>
+<thead><tr>
+<th>Fieldname</th>
+<th>Tab</th>
+<th>Function</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>General</td>
+<td>Used as identifier in the select box in an entry</td>
+</tr>
+<tr>
+<td>Href</td>
+<td>General</td>
+<td>The URL</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>General</td>
+<td>Dropdown to choose where/how the link should be opened (&lt;a  <strong>target="{valueOfTarget}"</strong>...)</td>
+</tr>
+<tr>
+<td>Entries</td>
+<td>Entries</td>
+<td>Images related to the question</td>
+</tr>
+</tbody>
+</table><h3>
+<a name="4-plugins-frontend" class="anchor" href="#4-plugins-frontend"><span class="octicon octicon-link"></span></a>4. Plugins (Frontend)</h3>
+
+<p>The Extension comes with 2 plugins <strong>FAQ - Category navigation</strong> and <strong>FAQ - Show category entries</strong>.</p>
+
+<table>
+<thead><tr>
+<th>Plugin</th>
+<th>Function</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>FAQ - Category navigation</td>
+<td>Renders a navigation of all categories</td>
+</tr>
+<tr>
+<td>FAQ - Show category entries</td>
+<td>Displays all entries for a selected category</td>
+</tr>
+</tbody>
+</table><p>To use a plugin choose the <strong>Page tool</strong> and select a page from your page tree. Add a new record of type <strong>General Plugin</strong> (found under the <em>Plugins</em> tab).</p>
+
+<p>In the new record go to the tab <em>Plugin</em> and choose one of the two plugins in the dropdown list.
+Repeat the same step for the second plugin.</p>
+
+<p>DONE! Make sure to clear your TYPO3 Caches now and preview your page in the frontend :) </p>
+
+<hr><h3>
+<a name="random-stuff" class="anchor" href="#random-stuff"><span class="octicon octicon-link"></span></a>Random stuff</h3>
+
+<p>I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could look like.</p>
+
+<p>Feel free to remove the CSS and JavaScript files by removing the following lines in the <strong>ext_tables.php</strong>:</p>
+
+<pre><code>$GLOBALS['TSFE']-&gt;additionalHeaderData[$_EXTKEY.'css']...
+</code></pre>
+
+<pre><code>$GLOBALS['TSFE']-&gt;additionalHeaderData[$_EXTKEY.'js']...
+</code></pre>
+
+<hr><h3>
+<a name="languages" class="anchor" href="#languages"><span class="octicon octicon-link"></span></a>Languages</h3>
+
+<p>The extension currently supports the following languages in the front- and backend:</p>
+
+<ul>
+<li>English (<em>default</em>)</li>
+<li>German</li>
+</ul><hr><h3>
+<a name="bug-or-feature" class="anchor" href="#bug-or-feature"><span class="octicon octicon-link"></span></a>Bug or feature?</h3>
+
+<p>If there are any bugs or any features you would like me to add to this extension, feel free to open an issue on <a href="https://github.com/ingokasch/ik_faq">this very Github page</a>.</p>
+
+<hr><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>GNU GENERAL PUBLIC LICENSE V3</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ik_faq maintained by <a href="https://github.com/ingokasch">ingokasch</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-51448998-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
