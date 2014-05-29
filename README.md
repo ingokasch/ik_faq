@@ -120,7 +120,7 @@ DONE! Make sure to clear your TYPO3 Caches now and preview your page in the fron
 
 ---
 
-### Includes CSS & JavaScript
+### Included CSS & JavaScript
 I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could look like.
 
 Feel free to remove the CSS and JavaScript files by removing the following lines in the **ext_tables.php**:
