@@ -25,6 +25,8 @@ The used gulpfile.js and composer.json ([composer](https://getcomposer.org/)) ar
 
 ***Sidenote: I recommand you include all CSS and JavaScript code in your existing files to have it all in one place.***
 
+More on that in the section **Included CSS & JavaScript** below.
+
 ---
 
 # Getting started
@@ -118,7 +120,7 @@ DONE! Make sure to clear your TYPO3 Caches now and preview your page in the fron
 
 ---
 
-### Random stuff
+### Includes CSS & JavaScript
 I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could look like.
 
 Feel free to remove the CSS and JavaScript files by removing the following lines in the **ext_tables.php**:
@@ -139,7 +141,7 @@ The extension currently supports the following languages in the front- and backe
 ---
 
 ### Bug or feature?
-If there are any bugs or any features you would like me to add to this extension, feel free to open an issue on [this very Github page](https://github.com/ingokasch/ik_faq).
+If there are any bugs or any features you would like me to add to this extension, feel free to open an issue on [this Github page](https://github.com/ingokasch/ik_faq/issues).
 
 ---
 
