@@ -1,0 +1,9 @@
+<h3>{category.title}</h3>
+
+<f:if condition="{category.images}">
+	<section class="category-images">
+		<f:for each="{category.images}" as="image">
+			<f:image src="{image.originalResource.publicUrl}" width="100c" height="100c"/>
+		</f:for>
+	</section>
+</f:if>

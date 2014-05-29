@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-25T11:41:01Z" product-name="ik_faq">
+		<header/>
+		<body>
+			<trans-unit id="tx_ikfaq_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.entries">
+				<source>Entries</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_category.tab.entries">
+				<source>Entries</source>
+			</trans-unit>
+
+			<trans-unit id="tx_ikfaq_domain_model_entry">
+				<source>Entry</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.title">
+				<source>Title (will be show in the entry list for the category selection)</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.question_images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.answere">
+				<source>Answere</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.answere_images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.answere">
+				<source>Answere</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_entry.tab.links">
+				<source>Links</source>
+			</trans-unit>
+
+			<trans-unit id="tx_ikfaq_domain_model_link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.href">
+				<source>Href</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.target">
+				<source>Target</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.entries">
+				<source>Entries</source>
+			</trans-unit>
+			<trans-unit id="tx_ikfaq_domain_model_link.tab.entries">
+				<source>Entries</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

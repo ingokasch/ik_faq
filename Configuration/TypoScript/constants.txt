@@ -1,0 +1,15 @@
+
+plugin.tx_ikfaq {
+	view {
+		# cat=plugin.tx_ikfaq/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ik_faq/Resources/Private/Templates/
+		# cat=plugin.tx_ikfaq/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ik_faq/Resources/Private/Partials/
+		# cat=plugin.tx_ikfaq/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ik_faq/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_ikfaq//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

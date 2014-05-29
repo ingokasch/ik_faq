@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-25T11:41:01Z" product-name="ik_faq">
+		<header/>
+		<body>
+			<trans-unit id="question.description">
+				<source>question</source>
+			</trans-unit>
+			<trans-unit id="question_images.description">
+				<source>questionImage</source>
+			</trans-unit>
+			<trans-unit id="answere.description">
+				<source>answere</source>
+			</trans-unit>
+			<trans-unit id="answere_images.description">
+				<source>answereImage</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>categories</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

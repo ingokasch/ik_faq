@@ -1,0 +1,5 @@
+.settings
+.project
+Resources/Private/Assets/.sass-cache
+Resources/Private/Assets/node_modules
+.buildpath

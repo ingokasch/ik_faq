@@ -1,0 +1,14 @@
+<f:layout name="Default" />
+<f:section name="main">
+		<f:render partial="Category/Category" arguments="{category:category}" />
+		<f:if condition="{entries}">
+			<f:then>
+				<f:for each="{entries}" as="entry" iteration="iteration">
+						<f:render partial="Entry/Entry" arguments="{entry:entry, selectEntry:selectEntry, iteration:iteration}" />
+				</f:for>
+			</f:then>
+			<f:else>
+				<p><f:translate key="category.noentries"/></p>
+			</f:else>
+		</f:if>
+</f:section>
