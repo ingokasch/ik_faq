@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="ik_faq : ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website." />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="ik_faq : ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -60,7 +60,7 @@ The used gulpfile.js and composer.json (<a href="https://getcomposer.org/">compo
 
 <p><strong><em>Sidenote: I recommand you include all CSS and JavaScript code in your existing files to have it all in one place.</em></strong></p>
 
-<p>More on that in the section <strong>Included CSS & JavaScript</strong> below.</p>
+<p>More on that in the section <strong>Included CSS &amp; JavaScript</strong> below.</p>
 
 <hr><h1>
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h1>
@@ -246,16 +246,20 @@ Repeat the same step for the second plugin.</p>
 <p>DONE! Make sure to clear your TYPO3 Caches now and preview your page in the frontend :) </p>
 
 <hr><h3>
-<a name="random-stuff" class="anchor" href="#random-stuff"><span class="octicon octicon-link"></span></a>Random stuff</h3>
+<a name="included-css--javascript" class="anchor" href="#included-css--javascript"><span class="octicon octicon-link"></span></a>Included CSS &amp; JavaScript</h3>
 
-<p>I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could look like.</p>
+<p>I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could work and look like.</p>
 
-<p>Feel free to remove the CSS and JavaScript files by removing the following lines in the <strong>ext_tables.php</strong>:</p>
+<p>All files are included via Typoscript and can easily be removed if you want to use your own CSS/JS (<strong>setup.ts</strong>):</p>
 
-<pre><code>$GLOBALS['TSFE']-&gt;additionalHeaderData[$_EXTKEY.'css']...
+<pre><code>page.includeCSS {
+    ik_faq      = typo3conf/ext/ik_faq/Resources/Public/css/ik_faq.min.css
+}
 </code></pre>
 
-<pre><code>$GLOBALS['TSFE']-&gt;additionalHeaderData[$_EXTKEY.'js']...
+<pre><code>page.includeJSFooter {
+    ik_faq      = typo3conf/ext/ik_faq/Resources/Public/js/ik_faq.js
+}
 </code></pre>
 
 <hr><h3>
@@ -269,7 +273,7 @@ Repeat the same step for the second plugin.</p>
 </ul><hr><h3>
 <a name="bug-or-feature" class="anchor" href="#bug-or-feature"><span class="octicon octicon-link"></span></a>Bug or feature?</h3>
 
-<p>If there are any bugs or any features you would like me to add to this extension, feel free to open an issue on <a href="https://github.com/ingokasch/ik_faq">this very Github page</a>.</p>
+<p>If there are any bugs or any features you would like me to add to this extension, feel free to open an issue on <a href="https://github.com/ingokasch/ik_faq/issues">this Github page</a>.</p>
 
 <hr><h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
