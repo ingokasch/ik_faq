@@ -37,9 +37,9 @@ class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 	 *
 	 * @var \IngoKasch\IkFaq\Domain\Repository\CategoryRepository
 	 * @inject
-	 */
+	*/
 	protected $categoryRepository = NULL;
-	
+
 	/**
 	 * entryRepository
 	 *

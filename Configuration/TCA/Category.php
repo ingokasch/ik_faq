@@ -13,7 +13,8 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
 			hidden, 
 			title, 
 			images, 
-			entries',
+			entries
+		',
 	),
 	'types' => array(
 		'1' => array('showitem' => '

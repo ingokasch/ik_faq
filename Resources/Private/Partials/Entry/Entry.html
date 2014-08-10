@@ -7,7 +7,7 @@
 	</f:else>
 </f:if>
 	<div class="tx_ikfaq_question" data-index="{iteration.index}">
-		<p>{entry.question}</p>
+		<p><f:format.html>{entry.question}</f:format.html></p>
 			<f:if condition="{entry.questionImages}">
 				<section class="entry-question-images">
 					<f:for each="{entry.questionImages}" as="questionImage">
@@ -20,7 +20,7 @@
 			</f:if>
 	</div>
 	<div class="tx_ikfaq_answere" data-index="{iteration.index}">
-			<p>{entry.answere}</p>
+			<p><f:format.html>{entry.answere}</f:format.html></p>
 			<f:if condition="{entry.answereImages}">
 				<section class="entry-answere-images">
 					<f:for each="{entry.answereImages}" as="answereImage">
