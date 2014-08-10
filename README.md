@@ -121,14 +121,18 @@ DONE! Make sure to clear your TYPO3 Caches now and preview your page in the fron
 ---
 
 ### Included CSS & JavaScript
-I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could look like.
+I want to provide a extension that is focused on functionality rater that a fancy styled frontend. The provided CSS and JavaScript files are just to give you an idea on how the frontend could work and look like.
 
-Feel free to remove the CSS and JavaScript files by removing the following lines in the **ext_tables.php**:
+All files are included via Typoscript and can easily be removed if you want to use your own CSS/JS (**setup.ts**):
 ```
-$GLOBALS['TSFE']->additionalHeaderData[$_EXTKEY.'css']...
+page.includeCSS {
+	ik_faq		= typo3conf/ext/ik_faq/Resources/Public/css/ik_faq.min.css
+}
 ```
 ```
-$GLOBALS['TSFE']->additionalHeaderData[$_EXTKEY.'js']...
+page.includeJSFooter {
+	ik_faq		= typo3conf/ext/ik_faq/Resources/Public/js/ik_faq.js
+}
 ```
 
 ---
