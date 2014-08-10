@@ -1,4 +1,3 @@
-
 plugin.tx_ikfaq {
 	view {
 		templateRootPath = {$plugin.tx_ikfaq.view.templateRootPath}
@@ -12,4 +11,11 @@ plugin.tx_ikfaq {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
 	}
+}
+
+page.includeCSS {
+	ik_faq		= typo3conf/ext/ik_faq/Resources/Public/css/ik_faq.min.css
+}
+page.includeJSFooter {
+	ik_faq		= typo3conf/ext/ik_faq/Resources/Public/js/ik_faq.js
 }

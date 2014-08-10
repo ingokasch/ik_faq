@@ -108,9 +108,3 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_link'] = array(
 				'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_link.png'
 		),
 );
-
-/********************************************************************************
- * Include default stylesheet and javascript files (you might want to remove these)
- ********************************************************************************/
-$GLOBALS['TSFE']->additionalHeaderData[$_EXTKEY.'css'] = '<link rel="stylesheet" type="text/css" href="' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/css/ik_faq.min.css"/>';
-$GLOBALS['TSFE']->additionalHeaderData[$_EXTKEY.'js'] = '<script type="text/javascript" src="' . \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/js/ik_faq.js"></script>';
