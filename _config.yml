@@ -1,0 +1,8 @@
+title: ik_faq
+description: ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website.
+google_analytics: UA-51448998-1
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
