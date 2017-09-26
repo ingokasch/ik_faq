@@ -75,7 +75,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
 		'1' => array('showitem' => ''),
 	),
 	'columns' => array(
-	
+
 		'sys_language_uid' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
@@ -116,7 +116,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
 				'max' => 255,
 			)
 		),
-	
+
 		'hidden' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -227,6 +227,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
 			'label' => 'LLL:EXT:ik_faq/Resources/Private/Language/locallang_db.xlf:tx_ikfaq_domain_model_entry.categories',
 			'config' => array(
 				'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
 				'foreign_table' => 'tx_ikfaq_domain_model_category',
 				'foreign_table_where' => 'ORDER BY tx_ikfaq_domain_model_category.uid',
 				'MM' => 'tx_ikfaq_category_entry_mm',
@@ -243,12 +244,13 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
 				),
 			),
 		),
-			
+
 		'links' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:ik_faq/Resources/Private/Language/locallang_db.xlf:tx_ikfaq_domain_model_entry.links',
 			'config' => array(
 				'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
 				'foreign_table' => 'tx_ikfaq_domain_model_link',
 				'MM' => 'tx_ikfaq_entry_link_mm',
 				'size' => 10,
@@ -263,6 +265,6 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
 				),
 			),
 		),
-		
+
 	),
 );

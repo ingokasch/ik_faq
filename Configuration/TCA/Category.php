@@ -34,7 +34,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
         'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_category.png'
     ),
 	'interface' => array(
-		'showRecordFieldList' => 
+		'showRecordFieldList' =>
 			'sys_language_uid, 
 			l10n_parent, 
 			l10n_diffsource, 
@@ -63,7 +63,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
 		'1' => array('showitem' => ''),
 	),
 	'columns' => array(
-	
+
 		'sys_language_uid' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
@@ -104,7 +104,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
 				'max' => 255,
 			)
 		),
-	
+
 		'hidden' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -171,6 +171,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
 			'label' => 'LLL:EXT:ik_faq/Resources/Private/Language/locallang_db.xlf:tx_ikfaq_domain_model_category.entries',
 			'config' => array(
 				'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
 				'foreign_table' => 'tx_ikfaq_domain_model_entry',
 				'MM' => 'tx_ikfaq_category_entry_mm',
 				'size' => 10,
@@ -185,6 +186,6 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
 				),
 			),
 		),
-		
+
 	),
 );

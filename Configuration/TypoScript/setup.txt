@@ -7,10 +7,6 @@ plugin.tx_ikfaq {
 	persistence {
 		storagePid = {$plugin.tx_ikfaq.persistence.storagePid}
 	}
-	features {
-		# uncomment the following line to enable the new Property Mapper.
-		# rewrittenPropertyMapper = 1
-	}
 }
 
 page.includeCSS {

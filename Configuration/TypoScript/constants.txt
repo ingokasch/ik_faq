@@ -1,4 +1,3 @@
-
 plugin.tx_ikfaq {
 	view {
 		# cat=plugin.tx_ikfaq/file; type=string; label=Path to template root (FE)
