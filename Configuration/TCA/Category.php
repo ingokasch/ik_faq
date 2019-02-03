@@ -31,7 +31,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_category'] = array(
         ),
         'searchFields' => 'title,image,entries,',
         'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Category.php',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_category.png'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_category.png'
     ),
 	'interface' => array(
 		'showRecordFieldList' =>

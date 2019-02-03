@@ -15,16 +15,16 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website',
 	'category' => 'plugin',
 	'author' => 'Ingo Kasch',
-	'author_email' => 'ingo.kasch@loom-consulting.com',
+	'author_email' => 'ingo.kasch@loom-dxp.com',
 	'state' => 'stable',
 	'internal' => '',
 	'uploadfolder' => '1',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '8.0.0',
+	'version' => '9.5.0',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '8.7.0-8.7.99',
+			'typo3' => '9.5.0-9.5.99',
 		),
 		'conflicts' => array(
 		),

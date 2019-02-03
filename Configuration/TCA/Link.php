@@ -33,7 +33,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_link'] = array(
         ),
         'searchFields' => 'name, href, target,',
         'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Link.php',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_link.png'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_link.png'
     ),
 	'interface' => array(
 		'showRecordFieldList' =>

@@ -32,7 +32,7 @@ $GLOBALS['TCA']['tx_ikfaq_domain_model_entry'] = array(
         ),
         'searchFields' => 'title, question,question_image,answere,answere_image,categories,',
         'dynamicConfigFile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Configuration/TCA/Entry.php',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_entry.png'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Public/Icons/tx_ikfaq_domain_model_entry.png'
     ),
 	'interface' => array(
 		'showRecordFieldList' => '
