@@ -6,7 +6,7 @@
 
 ik_faq is a TYPO3 extension for managing and displaying a FAQ section on your website.
 
-***This extension is developed under GNU V3 for TYPO3 8.7.x*** *and might not be compatible with older versions.*
+***This extension is developed under GNU V3 for TYPO3 9.5.x*** *and might not be compatible with older versions.*
 
 ### What am I able to do with it?
 
